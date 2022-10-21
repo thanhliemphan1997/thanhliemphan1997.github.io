@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>iViettech - Trung tâm đào tạo Lập trình viên chuyên nghiệp | chuyên đào tạo các khóa  lập trình Java, .Net, Android, iOS, PHP, Tester</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/main.css" rel="stylesheet">
+        <link rel="stylesheet" href="./fontawesome-free-6.2.0-web/fontawesome-free-6.2.0-web/css/all.min.css">
+        <link rel="shortcut icon" href="images/Screenshot-2022-10-13-100602.ico" type="image/x-icon">
+        <script src="https://kit.fontawesome.com/1e6261ec7f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div class="container">   
+                <div class="logo">
+                    <a href="iviettech.html"><img src="images/logo.png" alt="iviettech-logo"></a>
+                    
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="iviettech.html">Trang chủ</a></li>
+                        <li>
+                            <a href="">Các khoá học lập trình</a>
+                                <ul>
+                                    <li>
+                                        <a href="">Chuyên nghiệp</a>
+                                            <ul>
+                                                <li><a href="">Lập trình Androi</a></li>
+                                                <li><a href=""></a>Lập trình iOS-Swift</li>
+                                                <li><a href="">Kiểm thử chuyên nghiệp</a></li>
+                                                <li><a href="">Automation Testing</a></li>
+                                                <li><a href="">Lập trình Node.js-New</a></li>
+                                                <li><a href="">Lập trình Front-End</a></li>
+                                                <li><a href="">Lập trình PHP&amp;Lavarel</a></li>
+                                                <li><a href="">Lập trình Java từ A-Z</a></li>
+                                                <li><a href="">Lập trình viên chuyên nghiệp</a></li>
+                                            </ul>
+                                    </li>
+                                    <li>
+                                        <a href="">Chuyên sâu</a>
+                                            <ul>
+                                                <li><a href="">Phân tích nghiệp vụ (BA)</a></li>
+                                                <li><a href="">Quản lí dự án phần mềm</a></li>
+                                                <li><a href="">Kỹ sư trí tuệ nhân tạo</a></li>
+                                                <li><a href="">DevOps Engineer</a></li>
+                                            </ul>
+                                    </li>
+                                    <li>
+                                        <a href="">Thiết kế đồ hoạ</a>
+                                            <ul>
+                                                <li><a href="">Thiết kế đồ hoạ</a></li>
+                                                <li><a href="">Thiết kế UI/UX</a></li>
+                                                <li><a href="">Thiết kế nội thất</a></li>
+                                            </ul>
+                                    </li>
+                                    <li>
+                                        <a href="">Các khoá khác</a>
+                                            <ul>
+                                                <li><a href="">Lập trình cơ bản</a></li>
+                                                <li><a href="">Cao đẳng CNTT</a></li>
+                                                <li><a href="">Kỹ sư cầu nối Việt - Nhật</a></li>
+                                            </ul>
+                                    </li>
+                                </ul>
+                        </li>
+                        <li><a href="registry.html">Đăng ký học</a></li>
+                        <li><a href="">Việc làm</a></li>
+                        <li><a href="">iVietTech</a></li>
+                        <li><a href="">Trang vàng HV</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href=""><i class="fa-solid fa-magnifying-glass" style="color: #ba2f36;"></i></a></li>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <a href="registry.html">
+                        <img src="images/banner.jpg" style="width:100%">
+                    </a>
+                </div>
+        
+                <div class="mySlides fade">
+                    <a href="registry.html">
+                        <img src="images/banner2.jpg" style="width:100%">
+                    </a>                   
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+        
+            </div>  
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+        
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+        
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+        
+                function showSlides(n) {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    if (n > slides.length) {
+                        slideIndex = 1
+                    }
+                    if (n < 1) {
+                        slideIndex = slides.length
+                    }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                }
+            </script>
+        </nav>
+        <aside>
+            <div class="container">
+                <div class="block1">
+                    <div class="top">
+                        <p>ĐĂNG KÝ HỌC</p>
+                    </div>
+                    <div class="bottom">
+                        <form action="">
+                            <input type="text" class="info" placeholder="Họ và Tên">
+                            <input type="text" class="info" placeholder="Email">
+                            <input type="text" class="info" placeholder="Số điện thoại">
+                            <select name="" id="" class="select">
+                                <option value="">Chọn khoá học</option>
+                                <option value="">Lập trình cơ bản</option>
+                                <option value="">Kiểm thử chuyên nghiệp</option>
+                                <option value="">Automation Testing</option>
+                                <option value="">Lập trình Node.js-New</option>
+                                <option value="">Lập trình Front-End</option>
+                                <option value="">Lập trình PHP&amp;Lavarel</option>
+                                <option value="">Lập trình Java từ A-Z</option>
+                            </select>
+                            <textarea id="comment" cols="30" rows="3" placeholder="Lời nhắn của bạn" style="font-family:'Roboto', sans-serif; ;"></textarea>
+                            <input type="submit" value="ĐĂNG KÝ" class="signup">
+                        </form>
+                    </div>
+                </div>
+                <div class="block2">
+                    <div class="top">
+                        <p>CHƯƠNG TRÌNH ĐÀO TẠO</p>
+                    </div>
+                    <div class="bottom">
+                        <div class="box">
+                            <div class="image">
+                                <img src="images/img1.jfif" alt="">
+                            </div>
+                            <div class="text">
+                                <a href="">LẬP TRÌNH VIÊN CHUYÊN NGHIỆP</a>
+                                <p>Thời gian: 8 tháng</p>
+                                <p>Suất học: Tối 2-4-6</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="image">
+                                <img src="images/img2.png" alt="">
+                            </div>
+                            <div class="text">
+                                <a href="">LẬP TRÌNH FRONT-END NEW</a>
+                                <p>Thời gian: 5 tháng</p>
+                                <p>Suất học: Tối 2-4-6</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="image">
+                                <img src="images/img3.png" alt="">
+                            </div>
+                            <div class="text">
+                                <a href="">AUTOMATION TESTING</a>
+                                <p>Thời gian: 3 tháng</p>
+                                <p>Suất học: Tối 2-4-6</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="image">
+                                <img src="images/img4.jfif" alt="">
+                            </div>
+                            <div class="text">
+                                <a href="">KIỂM THỬ PHẦN MỀM</a>
+                                <p>Thời gian: 3 tháng</p>
+                                <p>Suất học: Tối 3-5-7</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>       
+        <section>
+            <div class="container">
+                <div class="block block-left">
+                    <img src="images/img-intro.jpg" alt="">
+                </div>
+                <div class="block block-middle">
+                    <div class="top">
+                        <img src="images/logo.png" alt="">
+                    </div>
+                    <div class="bottom">
+                        <h2>Giới Thiệu!</h2>
+                        <p>Trải qua nhiều năm làm việc trong ngành phần mềm, hiểu được thực trạng nhu cầu nhân lực của ngành, nhóm chuyên gia trong ngành đã thành lập Trung tâm đào tạo Lập trình viên chuyên nghiệp iVietTech với mong muốn thu hẹp khoảng cách giữa nhà trường và doanh nghiệp, tạo cơ hội việc làm cho các bạn trẻ đã, đang và sẽ theo học ngành CNTT.</p>
+                        <button type="button" class="button">Xem thêm</button>
+                    </div>
+                </div>
+                <div class="block block-right">
+                    <div class="top">
+                        <h3>
+                            <a href="">
+                                <span class="connect"><i class="fa-regular fa-comment"></i></span>
+                                <span>Kết Nối Với Chúng Tôi</span>
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="bottom">
+                        <img src="images/iviettech.fb.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="vt-school">
+            <div class="container">
+                <div class="left">
+                    <div class="top">
+                        <a href="">
+                            <span id="calender"><i class="fa-regular fa-calendar-days"></i></span>
+                            <span>LỊCH KHAI GIẢNG</span>
+                        </a>
+                    </div>
+                    <div class="bottom">
+                        <ul>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <img src="images/Automation-Testing-Logo.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">Automation testing</a>
+                                        <p>Ngày khai giảng: 24-10-2022</p>
+                                        <p>Lịch học: Tối 2-4-6</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <img src="images/Professional-Programmer1.jpg" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">Lập trình viên chuyên nghiệp</a>
+                                        <p>Ngày khai giảng: 24-10-2022</p>
+                                        <p>Lịch học: Tối 2-4-6</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <img src="images/Khoa-hoc-lap-trinh-PHP-Laravel.jpg" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">Lập trình web với PHP & Laravel</a>
+                                        <p>Ngày khai giảng: 25-10-2022</p>
+                                        <p>Lịch học: Tối 3-5-7</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <img src="images/Front-End-Developer.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">Lập trình Front-End</a>
+                                        <p>Ngày khai giảng: 31-10-2022</p>
+                                        <p>Lịch học: Tối 2-4-6</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <img src="images/DevOps-icon.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">DevOps Engineer</a>
+                                        <p>Ngày khai giảng: 31-10-2022</p>
+                                        <p>Lịch học: Tối 2-4-6</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <img src="images/tester_logo.jpg" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">Kiểm thử phần mềm</a>
+                                        <p>Ngày khai giảng: 01-11-2022</p>
+                                        <p>Lịch học: Tối 3-5-7</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <img src="images/Node_logo.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">Lập trình Node.js</a>
+                                        <p>Ngày khai giảng: 07-11-2022</p>
+                                        <p>Lịch học: Tối 2-4-6</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <img src="images/PM-icon.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">Quản lý dự án phần mềm</a>
+                                        <p>Ngày khai giảng: 14-11-2022</p>
+                                        <p>Lịch học: Tối 2-4-6</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="top">
+                        <p>
+                            <a href="">
+                                <span><i class="fa-solid fa-message"></i></span>
+                                <span>CÁC KHOÁ KHÁC</span>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <ul>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <img src="images/c_logo.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">Lập trình cơ bản</a>
+                                        <p>Ngày khai giảng: 17-10-2022</p>
+                                        <p>Thời gian: 1 tháng</p>
+                                        <p>Lịch học: Tối 2-4-6</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <img src="images/Interior-Design-icon.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">Thiết kế nội thất</a>
+                                        <p>Ngày khai giảng: 13-10-2022</p>
+                                        <p>Thời gian: 6 tháng</p>
+                                        <p>Lịch học: Tối 3-5-7</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <img src="images/icons-thiet-ke-do-hoa.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">Thiết kế đồ hoạ</a>
+                                        <p>Ngày khai giảng: 17-10-2022</p>
+                                        <p>Thời gian: 6 tháng</p>
+                                        <p>Lịch học: Tối 2-4-6</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <img src="images/UI-UX.jpg" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">Thiết kế UX/UI</a>
+                                        <p>Ngày khai giảng: 25-10-2022</p>
+                                        <p>Thời gian: 3 tháng</p>
+                                        <p>Lịch học: Tối 3-5-7</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main>
+            <div class="container">
+                <div class="left">
+                    <a href="" class="title1">
+                        <div class="block-left1">
+                            <span><i class="fa-regular fa-newspaper"></i></span>
+                        </div>
+                        <div class="block-right1">
+                            <p class="news-title">TIN TỨC &amp; SỰ KIỆN</h5>
+                            <p class="news-special">Tin Tức Chuyên Ngành</p>                       
+                        </div>
+                    </a>
+                    <div class="news1">
+                        <div class="news1-image">
+                            <a href="">
+                                <img src="images/7lido.png" alt="">
+                            </a>
+                        </div>
+                        <div class="news1-title">
+                            <p class="news-title">7 LÍ DO NÊN HỌC LẬP TRÌNH JAVA</p>
+                            <span class="news-special"><i class="fa-regular fa-clock"></i>   Thứ tư, 03/08/2022</span>
+                            <br>
+                            <p style="font-size: 80%;">Các lập trình viên ngày nay sử dụng lên đến hàng trăm ngôn ngữ lập trình. Tuy nhiên, không có ngôn ngữ nào được sử dụng rộng rãi, linh...</p>
+                            <br>
+                            <button type="button" class="button">Xem thêm</button>
+                        </div>
+                    </div>
+                    <div class="news2">
+                        <div class="news2-title">
+                            <p>TIN TỨC ĐÃ ĐƯA</p>
+                        </div>
+                        <div class="news2-content">
+                            <ul>
+                                <li class="news2-block">
+                                    <ul>
+                                        <li class="news2-block-img">
+                                            <a href="">
+                                                <img src="images/bai-viet-KG-web-10.jpg" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="news2-block-title">
+                                            <a href="">Tổng khai giảng tháng 10/2022 – Giảm ngay 10% học phí tháng đầu tiên</a>
+                                            <span class="news-special"><i class="fa-regular fa-clock"></i>   Thứ tư, 03/08/2022</span>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="news2-block">
+                                    <ul>
+                                        <li class="news2-block-img">
+                                            <a href="">
+                                                <img src="images/Node_logo (1).png" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="news2-block-title">
+                                            <a href="">Ra mắt khóa học mới Node.js</a>
+                                            <span class="news-special"><i class="fa-regular fa-clock"></i>   Thứ hai, 24/01/2022</span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="news2-title">
+                            <p>HỌC VIÊN NÓI VỀ TRUNG TÂM</p>
+                        </div>
+                        <div class="review-img">
+                                <div class="mySlides1 fade">
+                                        <img src="images/mina-review.png" style="width:100%">
+                                </div>
+                        
+                                <div class="mySlides1 fade">
+                                        <img src="images/review2.png" style="width:100%">                   
+                                </div>
+                                <div class="mySlides1 fade">
+                                        <img src="images/review3.png" style="width:100%">
+                                </div>
+                        
+                                <div class="mySlides1 fade">
+                                        <img src="images/review4.png" style="width:100%">                   
+                                </div>
+                                <div class="mySlides1 fade">
+                                        <img src="images/review5.png" style="width:100%">
+                                </div>
+                        
+                                <div class="mySlides1 fade">
+                                        <img src="images/review1.png" style="width:100%">                   
+                                </div>
+                                <a class="prev1" onclick="plusSlides1(-1)">❮</a>
+                                <a class="next1" onclick="plusSlides1(1)">❯</a>
+                            <script>
+                                let slideIndex1 = 1;
+                                showSlides1(slideIndex1);
+                        
+                                function plusSlides1(n) {
+                                    showSlides1(slideIndex1 += n);
+                                }
+                        
+                                function currentSlide1(n) {
+                                    showSlides1(slideIndex1 = n);
+                                }
+                        
+                                function showSlides1(n) {
+                                    let i;
+                                    let slides1 = document.getElementsByClassName("mySlides1");
+                                    if (n > slides1.length) {
+                                        slideIndex1 = 1
+                                    }
+                                    if (n < 1) {
+                                        slideIndex1 = slides1.length
+                                    }
+                                    for (i = 0; i < slides1.length; i++) {
+                                        slides1[i].style.display = "none";
+                                    }
+                                    slides1[slideIndex1 - 1].style.display = "block";
+                                }
+                            </script>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <a href="" class="title1">
+                        <div class="block-left1">
+                            <span><i class="fa-solid fa-magnifying-glass-dollar"></i></span>
+                        </div>
+                        <div class="block-right1">
+                            <p class="news-title">TIN TUYỂN DỤNG</h5>
+                            <p class="news-special">Việc Tìm Người - Người Tìm Việc</p>                       
+                        </div>
+                    </a>
+                    <div class="recruitment">
+                        <ul>
+                            <li>
+                                <ul>
+                                    <li class="recruitment-img">
+                                        <a href="">
+                                            <img src="images/vieclam1.jpg" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="recruitment-info">
+                                        <p>Công ty : FSOFT DANANG</p>
+                                        <a href="" class="employer">Tìm Fresher (TIẾNG ANH TỐT + Base IT) (đào tạo 1-2 tháng)</a>
+                                        <span class="news-special"><i class="fa-regular fa-clock"></i>   Thứ ba, 13/07/2021</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li class="recruitment-img">
+                                        <a href="">
+                                            <img src="images/vnext.jpg" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="recruitment-info">
+                                        <p>Công ty : VNEXT Đà Nẵng</p>
+                                        <a href="" class="employer">Tuyển dụng Junior Full-stack Developer - Lương Upto 20M Gross</a>
+                                        <span class="news-special"><i class="fa-regular fa-clock"></i>   Thứ ba, 13/07/2021</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li class="recruitment-img">
+                                        <a href="">
+                                            <img src="images/danangweb.jpg" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="recruitment-info">
+                                        <p>Công ty : CÔNG TY ĐÀ NẴNG WEB</p>
+                                        <a href="" class="employer">TUYỂN THỰC TẬP SINH PHP – ĐI LÀM DỰ ÁN THỰC TẾ NGAY</a>
+                                        <span class="news-special"><i class="fa-regular fa-clock"></i>   Thứ ba, 13/07/2021</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li class="recruitment-img">
+                                        <a href="">
+                                            <img src="images/abteam.jpg" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="recruitment-info">
+                                        <p>Công ty : AB TEAM</p>
+                                        <a href="" class="employer">Tuyển Frontend & Backend</a>
+                                        <span class="news-special"><i class="fa-regular fa-clock"></i>   Thứ ba, 13/07/2021</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li class="recruitment-img">
+                                        <a href="">
+                                            <img src="images/madison.jpg" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="recruitment-info">
+                                        <p>Công ty : Madison Technologies VN</p>
+                                        <a href="" class="employer">Tuyển FE & BE (INTERNS)</a>
+                                        <span class="news-special"><i class="fa-regular fa-clock"></i>   Thứ ba, 13/07/2021</span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="" class="title2">
+                        <div class="block-left2">
+                            <span><i class="fa-solid fa-magnifying-glass-dollar"></i></span>
+                        </div>
+                        <div class="block-right2">
+                            <p class="news-title">NHÀ TUYỂN DỤNG</h5>                       
+                        </div>
+                    </a>
+                    <div class="recruitment" style="font-size: 13px;">
+                        <ul>
+                            <li>
+                                <ul>
+                                    <li class="recruitment-img">
+                                        <a href="">
+                                            <img src="images/formos-logo.webp" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="recruitment-info">
+                                        <a href="" class="employer" style="font-weight: bold;">CÔNG TY PHẦN MỀM FORMOS</a>
+                                        <p>http://formos.com/ About Formos Founded in 2002, Formos delivers SaaS product development, mobile applications, and process management solutions. We have a ...</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li class="recruitment-img">
+                                        <a href="">
+                                            <img src="images/skcompany-logo.jpg" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="recruitment-info">
+                                        <a href="" class="employer" style="font-weight: bold;">Công ty SKCompany</a>
+                                        <p>ＳＫｃｏｍｐａｎｙ ベトナム là công ty con của công ty SKcompany bên Nhật. http://skcompany.tokyo/ Địa chỉ: Tầng 7 Tòa Nhà Bưu Điện TP ...</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li class="recruitment-img">
+                                        <a href="">
+                                            <img src="images/moziasoft.webp" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="recruitment-info">
+                                        <a href="" class="employer" style="font-weight: bold;">Công ty TNHH MoziaSoft</a>
+                                        <p>Tên công ty Công ty TNHH MoziaSoft Ngày thành lập 9/2016 Địa chỉ SUNRISE BUILDING số 25 đường 2/9 Đà ...</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li class="recruitment-img">
+                                        <a href="">
+                                            <img src="images/Novalo.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="recruitment-info">
+                                        <a href="" class="employer" style="font-weight: bold;">NovaIO Tech</a>
+                                        <p>Email: info@novaio.vn http://novaio.vn Liên hệ: 0905 531 717 (Mr Nhi)/ 0936 796 346 (Ms Oanh). Lô B, Tầng 10, Công ...</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li class="recruitment-img">
+                                        <a href="">
+                                            <img src="images/BlueOtter.webp" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="recruitment-info">
+                                        <a href="" class="employer" style="font-weight: bold;">Công Ty Blue Otter Corporation – Blue Otter Representative Office in Da Nang</a>
+                                        <p>Lĩnh vực hoạt động: + Bảo đảm chất lượng phần mềm thông qua kiểm tra manual và tự động ...</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="left"> 
+                    <p><b>Địa chỉ :</b> 92 Quang Trung, Q. Hải Châu, TP. Đà Nẵng - Điện thoại : 02363 888 279</p>
+                    <p><b>Email :</b> contact@iviettech.vn</p>                   
+                </div>
+                <div class="right">
+                    <p>Bản quyền thuộc về iViettech</p>
+                </div>
+            </div>
+        </footer>
+        </body>
+        </html>
